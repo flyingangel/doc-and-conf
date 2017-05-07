@@ -18,12 +18,10 @@ Create a virtual host conf
 
 > nano /etc/apache2/sites-available/dev.project.conf
 
-`
-<VirtualHost dev.project.com>
+    <VirtualHost dev.project.com>
         ServerName dev.project.com
         DocumentRoot /var/www/dev.project.com
-</VirtualHost>
-`
+    </VirtualHost>
 
 This is the minimal configuration, without security.
 
