@@ -19,8 +19,7 @@ Edit apache conf to add a virtual host
 
 > nano /etc/apache2/sites-available/000-default.conf
 
-`
-<VirtualHost *:888>
+    <VirtualHost *:888>
         DocumentRoot /var/www/git
 
         <Directory "/var/www/git">
@@ -39,9 +38,7 @@ Edit apache conf to add a virtual host
           AuthUserFile /opt/git/.htpasswd
           Require valid-user
         </Location>
-
-</VirtualHost>
-`
+    </VirtualHost>
 
 Here I used port 888 because I already used port 80 for my web server. Leave it port 80 for git server or choose any port you like.
 
