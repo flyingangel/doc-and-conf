@@ -18,7 +18,7 @@ Create a virtual host conf
 
 > nano /etc/apache2/sites-available/dev.project.conf
 
-    <VirtualHost dev.project.com>
+    <VirtualHost *:80>
         ServerName dev.project.com
         DocumentRoot /var/www/dev.project.com
     </VirtualHost>
