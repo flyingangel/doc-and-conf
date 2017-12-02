@@ -35,4 +35,5 @@ Mount using NFS system [remoteIP:/location/]
 If we want drive is mount automatically on next reboot
 
 > nano /etc/fstab
+
 > xx.xx.xx.xx:/path/to/share /sharedvm nfs defaults 0 0
