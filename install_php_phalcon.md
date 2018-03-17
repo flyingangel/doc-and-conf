@@ -15,7 +15,7 @@ This should install the phalcon extension in `/usr/lib/php/20151012`
 
 The php dev extension is required
 
-    sudo apt-get install php7.0-dev libpcre3-dev gcc make
+    sudo apt-get install php-dev libpcre3-dev gcc make
     cd cphalcon/build
     sudo ./install
 
