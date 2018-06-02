@@ -45,7 +45,8 @@ Here I used port 888 because I already used port 80 for my web server. Leave it 
 Tell apache to listen to port 888 :
 
 > nano /etc/apache2/ports.conf
-> Listen 888
+
+    Listen 888
 
 We configure to make apache read authentification info from the file `/opt/git/.htpasswd`. We need to generate this file  `htpasswd -c [any_location] [username]`
 
