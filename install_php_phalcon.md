@@ -2,10 +2,8 @@
 
 Follow the guide from the installation home page. In case linux throw error package missing.
 
-> curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | sudo bash
-
-> sudo apt-add-repository ppa:ondrej/php && sudo apt-get update
-
+> curl -s https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | sudo bash  
+> sudo apt-add-repository ppa:ondrej/php && sudo apt-get update  
 > sudo apt-get install php7.0-phalcon
 
 This should install the phalcon extension in `/usr/lib/php/20151012`
@@ -15,11 +13,20 @@ This should install the phalcon extension in `/usr/lib/php/20151012`
 
 The php dev extension is required
 
-    sudo apt-get install php-dev libpcre3-dev gcc make
-    cd cphalcon/build
-    sudo ./install
+> git clone https://github.com/phalcon/cphalcon  
+> sudo apt-get install php-dev libpcre3-dev gcc make  
+> cd cphalcon/build  
+> sudo ./install
 
 Don't forget to activate extension and restart Apache.
+
+> nano /etc/php/7.2/mods-available/phalcon.ini
+
+    extension=phalcon.so
+    
+> phpenmod phalcon    
+> service apache2 restart
+
 
 #### Dev tool
 
