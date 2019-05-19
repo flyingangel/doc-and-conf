@@ -4,9 +4,9 @@ Follow the guide from the installation home page. In case linux throw error pack
 
 > curl -s https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | sudo bash  
 > sudo apt-add-repository ppa:ondrej/php && sudo apt-get update  
-> sudo apt-get install php7.0-phalcon
+> sudo apt-get install php-phalcon
 
-This should install the phalcon extension in `/usr/lib/php/20151012`
+This should install the phalcon extension in `/usr/lib/php/20180731`
 
 
 #### Manual compilation
@@ -20,7 +20,7 @@ The php dev extension is required
 
 Don't forget to activate extension and restart Apache.
 
-> nano /etc/php/7.2/mods-available/phalcon.ini
+> nano /etc/php/7.3/mods-available/phalcon.ini
 
     extension=phalcon.so
     
@@ -37,8 +37,8 @@ This should be run as root and put in `/root`
     git clone git://github.com/phalcon/phalcon-devtools.git
     cd phalcon-devtools/
     . ./phalcon.sh
-    ln -s ~/phalcon-devtools/phalcon.php /usr/bin/phalcon
-    chmod ugo+x /usr/bin/phalcon
+    ln -s $(pwd)/phalcon.php /usr/local/bin/phalcon
+    chmod ugo+x /usr/local/bin/phalcon
 
 #### Apache configuration
 
