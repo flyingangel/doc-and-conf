@@ -1,0 +1,22 @@
+{
+	"php-cs-fixer.rules": {
+		"@PSR1": true,
+		"@PSR2": true,
+		"@PhpCsFixer": true,
+		"array_syntax": {
+			"syntax": "short"
+		},
+		"yoda_style": false,
+		"single_quote": true,
+		"binary_operator_spaces": {
+			"operators": {
+				"=>": "align_single_space_minimal",
+				"=": "align_single_space_minimal"
+			}
+		},
+		"concat_space": {
+			"spacing": "one"
+		},
+		"phpdoc_inline_tag": false
+	}
+}
