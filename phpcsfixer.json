@@ -17,6 +17,7 @@
 		"concat_space": {
 			"spacing": "one"
 		},
-		"phpdoc_inline_tag": false
+		"phpdoc_inline_tag": false,
+		"phpdoc_no_empty_return": false
 	}
 }
