@@ -1,22 +1,22 @@
-### Add a virtual host
+# Add a virtual host
 
 Note: All the steps require `sudo su` access
 
 Edit host file to point the website to our localhost
 
-> nano /etc/hosts
+    nano /etc/hosts
 
 Add line
 
-> 127.0.0.1	dev.project.com
+    127.0.0.1	dev.project.com
 
 Add project if not exist
 
-> mkdir /var/www/dev.project.com
+    mkdir /var/www/dev.project.com
 
 Create a virtual host conf
 
-> nano /etc/apache2/sites-available/dev.project.conf
+    nano /etc/apache2/sites-available/dev.project.conf
 
     <VirtualHost *:80>
         ServerName dev.project.com
@@ -35,8 +35,8 @@ This is the minimal configuration, without security.
 
 Enable site
 
-> a2ensite dev.project.conf
+    a2ensite dev.project.conf
 
 Reload apache
 
-> /etc/init.d/apache2 reload
+    /etc/init.d/apache2 reload

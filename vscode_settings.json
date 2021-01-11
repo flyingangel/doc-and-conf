@@ -1,0 +1,101 @@
+{
+	"files.autoSave": "onFocusChange",
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/vendor/**": true,
+		"**/vendorOverride/**": true,
+		"**/.cache/**": true,
+		"**/.vscode/**": true
+	},
+	"telemetry.enableTelemetry": false,
+	"explorer.confirmDelete": false,
+	"files.autoSaveDelay": 5000,
+	"javascript.updateImportsOnFileMove.enabled": "never",
+	"files.exclude": {
+		"**/.cache": true,
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/node_modules": true,
+		"**/.svn": true
+	},
+	"search.exclude": {
+		"**/.cache": true,
+		"**/bower_components": true,
+		"**/node_modules": true,
+		"**/vendor": true,
+		"**/vendorOverride": true
+	},
+	"files.eol": "\n",
+	"git.confirmSync": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"php-cs-fixer.rules": {
+		"@PSR1": true,
+		"@PSR2": true,
+		"@PhpCsFixer": true,
+		"array_syntax": {
+			"syntax": "short"
+		},
+		"yoda_style": false,
+		"single_quote": true,
+		"binary_operator_spaces": {
+			"operators": {
+				"=>": "align_single_space_minimal",
+				"=": "align_single_space_minimal"
+			}
+		},
+		"concat_space": {
+			"spacing": "one"
+		},
+		"increment_style": {
+			"style": "post"
+		}
+	},
+	"workbench.tree.indent": 32,
+	"window.zoomLevel": 1,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": false
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"php-cs-fixer.autoFixByBracket": false,
+	"[sql]": {
+		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"eslint.run": "onSave",
+	"git.suggestSmartCommit": false,
+	"gitlens.currentLine.enabled": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.codeLens.enabled": false,
+	"gitlens.statusBar.enabled": false,
+	"gitlens.views.lineHistory.enabled": false,
+	"shellcheck.enableQuickFix": true,
+	"shellcheck.customArgs": [
+		"-x"
+	],
+	"shellcheck.exclude": [
+		"SC1090",
+		"SC2012",
+		"SC2088"
+	],
+	"diffEditor.ignoreTrimWhitespace": true,
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.printWidth": 140,
+	"twig-language-2.indentStyle": "space",
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"php-cs-fixer.lastDownload": 1609843214352,
+	"csv-preview.separator": ";"
+}
