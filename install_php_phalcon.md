@@ -7,13 +7,9 @@ This follow the online guide of version 4 of the [Fhalcon Framework](https://doc
 > For this guide we'll use PHP 7.3. For default latest PHP, use without a prefix version i.e. `php-xxx`.
 
     sudo apt install build-essential gcc make automake autoconf
-    sudo apt install libpcre3-dev php7.3-dev php7.3-common php7.3-gettext php7.3-json php7.3-mbstring
+    sudo apt install libpcre3-dev php7.3-dev php7.3-common php7.3-gettext php7.3-json php7.3-mbstring php7.3-psr
 
-## Install PSR extension
-
-The [PSR extension](https://github.com/jbboehr/php-psr.git).
-
-    sudo apt install php7.3-psr
+More info on the [PSR extension](https://github.com/jbboehr/php-psr.git).
 
 ## Install Phalcon extension
 
@@ -59,7 +55,7 @@ If we want to test like a real site, we must use nginx virtual host.
         client_max_body_size 10M;
 
         location / {
-            try_files $uri $uri/ /index.php?_url=$uri&$args =404;
+            try_files $uri $uri/ /index.php?_url=$uri&$args;
         }
 
         location ~ [^/]\.php(/|$) {
